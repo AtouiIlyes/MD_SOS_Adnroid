@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:app="http://schemas.android.com/apk/res/info.androidhive.slidingmenu"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:orientation="vertical"
+    android:background="@drawable/bluee">
+
+    <isima.ilyes.CircularImageView.CircularImageView
+        android:id="@+id/imgDoge"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_margin="16dp"
+        android:clickable="true"
+        android:paddingTop="4dp"
+        android:src="@drawable/ilyes"
+        app:border="true"
+        app:border_color="#FFFFFFFF"
+        app:border_width="4dp"
+        app:selector="true"
+        app:selector_color="#4403a9f4"
+        app:selector_stroke_color="#aa5677fc"
+        app:selector_stroke_width="4dp"
+        app:shadow="true" />
+
+
+ 
+<LinearLayout
+    android:id="@+id/lin1"
+     android:layout_width="300dp"
+     android:layout_height="wrap_content"
+     android:layout_alignParentRight="true"
+     android:layout_centerVertical="true"
+     android:layout_marginRight="8dp"
+     android:layout_toRightOf="@+id/imgDoge" 
+     android:background="@drawable/trans"
+    android:orientation="horizontal"
+     android:padding="0dp" >
+
+    <TextView
+        android:id="@+id/Nom"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center_vertical|center|center_horizontal"
+        android:text="Atoui Ilyes"
+        android:textColor="#fff"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        style="@style/AudioFileInfoOverlayText"  />
+
+</LinearLayout>
+
+<LinearLayout
+     android:layout_width="300dp"
+     android:layout_height="wrap_content"
+     android:layout_alignParentRight="true"
+     android:layout_centerVertical="true"
+     android:layout_marginRight="8dp"
+     android:layout_below="@+id/lin1"
+     android:layout_toRightOf="@+id/imgDoge" 
+     android:background="@drawable/trans"
+     android:orientation="horizontal"
+     android:padding="0dp"
+     android:layout_marginTop="10dp" >
+     <TextView
+         android:id="@+id/Email"
+         android:layout_width="300dp"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="0dp"
+         android:ems="10"
+         android:text="atoui.ilyes@gmail.com"
+         android:textColor="#fff"
+         android:textSize="20dp"
+         android:textStyle="italic|bold"
+         android:gravity="left|center_horizontal"
+         style="@style/AudioFileInfoOverlayText"  />
+     
+    
+</LinearLayout>
+
+    
+
+</RelativeLayout>
+   

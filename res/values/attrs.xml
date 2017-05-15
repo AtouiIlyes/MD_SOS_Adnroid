@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SlidingDrawer">
+        <attr name="slide_handle" format="integer"/>
+        <attr name="slide_content" format="integer"/>
+        <attr name="topOffset" format="dimension"></attr>
+        <attr format="boolean" name="allowSingleTap"></attr>
+        <attr name="orientation" format="integer"></attr>
+        <attr name="bottomOffset" format="dimension"></attr>
+        <attr name="animateOnClick" format="boolean"></attr>
+        
+        <attr name = "maxHeight" format = "dimension"/>
+    </declare-styleable>
+
+    
+</resources>

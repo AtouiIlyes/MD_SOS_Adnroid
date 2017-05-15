@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_register"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="nom et prénom"
+            android:gravity="center"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:inputType="textCapWords"
+             android:background="@color/White"
+            android:textColor="@color/input_register"
+            android:textColorHint="@color/input_register_hint" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/login"
+            android:gravity="center"
+            android:hint="@string/hint_email"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/input_register"
+            android:textColorHint="@color/input_register_hint" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/mp"
+            android:gravity="center"
+            android:hint="mot de passe"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/input_register"
+            android:textColorHint="@color/input_register_hint" />
+
+        <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp" 
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:background="@color/input_register_hint" >
+        
+        
+        <RadioButton
+            android:id="@+id/radioGroupButton0"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:drawableLeft="@drawable/deaf"
+            android:drawingCacheQuality="high"
+            android:checked="true"
+            android:text="sourd et muet" 
+            android:textSize="20dp"
+            android:textColor="#fff"/>
+	
+        <RadioButton
+            android:id="@+id/radioGroupButton1"
+            android:drawableLeft="@drawable/normal"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:padding="1dp"
+            android:text="utilisateur normal" 
+            android:textSize="20dp"
+            android:textColor="#fff"/>
+       
+       
+        </RadioGroup>
+        
+        <!-- Login Button -->
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:background="#ea4c88"
+            android:text="@string/btn_register"
+            android:textColor="@color/white" />
+
+        <!-- Link to Login Screen -->
+
+        <Button
+            android:id="@+id/btnLinkToLoginScreen"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dip"
+            android:background="@null"
+            android:text="@string/btn_link_to_login"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+</LinearLayout>

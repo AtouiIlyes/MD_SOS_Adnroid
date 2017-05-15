@@ -1,0 +1,289 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:mysliding="http://schemas.android.com/apk/res/info.androidhive.slidingmenu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NavigationActivity" >
+
+    <fragment
+    	android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="com.google.android.gms.maps.SupportMapFragment" >
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvAddress"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="134dp"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/bNavigation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="5dp"
+        android:text="Navigate" />
+    
+      <Button
+        android:id="@+id/ret"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="60dp"
+        android:text="return" 
+        />
+      
+      
+      
+      
+        
+       <isima.ilyes.mdsos.SlidingDrawer
+        android:id="@+id/drawer"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:background="#40808080"
+        android:visibility="visible"
+        mysliding:slide_content="@+id/content"
+        mysliding:slide_handle="@+id/handle" 
+        mysliding:maxHeight="420dip"
+        >
+
+        <LinearLayout
+            android:id="@id/content"
+            android:layout_width="fill_parent"
+            android:layout_height="400dp" 
+            android:layout_marginTop="0dp"
+            android:background="#40808080"
+            android:orientation="vertical"
+            android:gravity="center">
+             <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/linearlayout_bg"
+        android:orientation="vertical"
+        android:padding="10dp" >
+        
+                 <RelativeLayout
+        android:id="@+id/r1"             
+        android:layout_width="580dp"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:background="@drawable/bg_relativelinear"
+        android:layout_marginTop="10dp" 
+        android:clickable="true"
+        
+            >
+			<Button
+			    android:id="@+id/btn1"
+			    android:layout_width="50dp"
+                android:layout_height="50dp" 
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/pharmacist"/>
+			<TextView 
+			    android:id="@+id/txt1"
+			    android:gravity="center_vertical"
+    			android:layout_width="500dp"
+                android:layout_height="50dp" 
+                android:layout_marginLeft="100dp"
+                android:text="Pharmacies"
+                android:textSize="30sp"
+                android:textColor="#000000"
+                
+                
+			    />
+		
+			</RelativeLayout>
+			<RelativeLayout
+		
+		android:id="@+id/r2"
+		android:layout_marginTop="5dp" 
+		android:layout_width="580dp"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:background="@drawable/bg_relativelinear"
+        android:clickable="true"
+            >
+			<Button
+			    android:id="@+id/btn2"
+			    android:layout_width="50dp"
+                android:layout_height="50dp" 
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/policeman"/>
+   
+			<TextView 
+			    android:id="@+id/txt2"
+			    android:gravity="center_vertical"
+    			android:layout_width="500dp"
+                android:layout_height="50dp" 
+                android:layout_marginLeft="100dp"
+                android:text="Polices"
+                android:textSize="30sp"
+                android:textColor="#000000"
+                
+               />
+      </RelativeLayout>
+<RelativeLayout
+		
+		android:id="@+id/r3"
+		android:layout_marginTop="5dp" 
+		android:layout_width="580dp"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:background="@drawable/bg_relativelinear"
+        android:clickable="true"
+       
+            >
+			<Button
+			    android:id="@+id/btn3"
+			    android:layout_width="50dp"
+                android:layout_height="50dp" 
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/nurse"/>
+			
+   
+			<TextView 
+			    android:id="@+id/txt3"
+			    android:gravity="center_vertical"
+    			android:layout_width="500dp"
+                android:layout_height="50dp" 
+                android:layout_marginLeft="100dp"
+                android:text="Cliniques"
+                android:textSize="30sp"
+                android:textColor="#000000"
+                
+                
+			    />
+      </RelativeLayout>
+       
+
+<RelativeLayout
+		
+		android:id="@+id/r4"
+		android:layout_marginTop="5dp" 
+		android:layout_width="580dp"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:background="@drawable/bg_relativelinear"
+        android:clickable="true"
+       
+            >
+			<Button
+			    android:id="@+id/btn3"
+			    android:layout_width="50dp"
+                android:layout_height="50dp" 
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/doctor"/>
+			
+   
+			<TextView 
+			    android:id="@+id/txt3"
+			    android:gravity="center_vertical"
+    			android:layout_width="500dp"
+                android:layout_height="50dp" 
+                android:layout_marginLeft="100dp"
+                android:text="hôpitals"
+                android:textSize="30sp"
+                android:textColor="#000000"
+                
+                
+			    />
+      </RelativeLayout>
+      
+<RelativeLayout
+		
+		android:id="@+id/r5"
+		android:layout_marginTop="5dp" 
+		android:layout_width="580dp"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:background="@drawable/bg_relativelinear"
+        android:clickable="true"
+       
+            >
+			<Button
+			    android:id="@+id/btn3"
+			    android:layout_width="50dp"
+                android:layout_height="50dp" 
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/pompier"/>
+			
+   
+			<TextView 
+			    android:id="@+id/txt3"
+			    android:gravity="center_vertical"
+    			android:layout_width="500dp"
+                android:layout_height="50dp" 
+                android:layout_marginLeft="100dp"
+                android:text="Protection Civile"
+                android:textSize="30sp"
+                android:textColor="#000000"
+                
+                
+			    />
+      </RelativeLayout>
+      
+<RelativeLayout
+		
+		android:id="@+id/r6"
+		android:layout_marginTop="5dp" 
+		android:layout_width="580dp"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:background="@drawable/bg_relativelinear"
+        android:clickable="true"
+       
+            >
+			<Button
+			    android:id="@+id/btn3"
+			    android:layout_width="50dp"
+                android:layout_height="50dp" 
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/nursefemel"/>
+			
+   
+			<TextView 
+			    android:id="@+id/txt3"
+			    android:gravity="center_vertical"
+			    android:layout_marginLeft="100dp"
+    			android:layout_width="500dp"
+                android:layout_height="50dp" 
+                android:text="dispensaire"
+                android:textSize="30sp"
+                android:textColor="#000000"
+                
+                
+			    />
+      </RelativeLayout>
+
+    </LinearLayout>
+    
+               
+            <ListView
+                android:id="@+id/talk_list_content"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignParentTop="true"
+                android:drawingCacheQuality="auto" />
+		
+        </LinearLayout>
+
+        <ImageView
+            android:id="@id/handle"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:src="@drawable/slider_talk2"
+            android:clickable="true"
+            />
+        
+    </isima.ilyes.mdsos.SlidingDrawer>
+      
+      
+      
+</fragment>
+</RelativeLayout>

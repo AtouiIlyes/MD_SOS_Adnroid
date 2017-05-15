@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MD-SOS</string>
+   
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_name">Fullname</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="btn_register">REGISTER</string>
+    <string name="btn_link_to_register"><u>Not a member? Sign up now.</u></string>
+    <string name="btn_link_to_login"><u>Already registred! Login Me.</u></string>
+    <string name="welcome">Welcome</string>
+    <string name="btn_logout">LOGOUT</string>
+    <string name="name">Fullname</string>
+    
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="drawer_open">Slider Menu Opened</string>
+    <string name="drawer_close">Slider Menu Closed</string>
+	 <string name="Cartes_arrays">Selectionner Categorie</string>
+	 <string name="TypeSang_arrays">Selectionner Categorie</string>
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item>Home</item>
+        <item>Informations</item>
+        <item>Personnal card</item>
+        <item>fiche de sante</item>
+        <item>sms</item>
+        <item>Help</item>
+        <item>demander urgence</item>
+        <item>services santes plus proches</item>
+        <item>Follow us</item>
+        <item>page FB</item>
+        <item>page tweeter</item>
+        <item>google+</item>
+        <item>Log out</item>
+        <item>Deconnection</item>
+        <item>end</item>
+    </string-array>
+
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/ic_home</item>
+        <item>@drawable/ic_personnal_card</item>
+        <item>@drawable/ic_fiche_sante</item>
+        <item>@drawable/ic_sms</item>
+        <item>@drawable/ic_help</item>
+        <item>@drawable/ic_map</item>
+        <item>@drawable/ic_fb</item>
+        <item>@drawable/ic_twitter</item>
+        <item>@drawable/ic_google</item>
+        <item>@drawable/ic_logout</item>
+    </array>
+    
+     <string-array name="Cartes_Types">
+        <item>TYPE NORMAL</item>
+        <item>TYPE HYBRID</item>
+        <item>TYPE SATELLITE</item>
+        <item>TYPE TERRAIN</item>
+        <item>TYPE NONE</item>
+ </string-array>
+ 
+     <string-array name="Sang_Types">
+        <item>A +</item>
+        <item>A -</item>
+        <item>B +</item>
+        <item>B -</item>
+        <item>O +</item>
+        <item>O -</item>
+        <item>AB +</item>
+        <item>AB -</item>
+        
+ </string-array>
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+    <string name="title_activity_pagefb_fragment">PagefbFragment</string>
+
+</resources>

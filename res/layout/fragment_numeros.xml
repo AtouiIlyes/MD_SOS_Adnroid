@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+     		android:id="@+id/rl1"
+    		android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/bg_location">
+             <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/location_marker" 
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="10dp" />
+             <TextView 
+                 android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="Vous   êtes :"
+                    android:textColor="#fff"
+                    android:textSize="15dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="60dp"
+                    style="@style/AudioFileInfoOverlayText"
+                 />
+             <TextView 
+                    android:id="@+id/tvAddress"
+                    android:layout_width="100dp"
+                    android:paddingLeft="20dp"
+                    android:layout_height="60dp"
+                    android:textColor="#fff"
+                    android:textSize="15dp"
+                   android:layout_marginTop="8dp"
+                    android:layout_marginLeft="120dp"
+                    style="@style/AudioFileInfoOverlayText"
+                 />
+             
+              <TextView 
+                    android:id="@+id/tvLongeLang"
+                    android:layout_width="400dp"
+                    android:layout_height="50dp"
+                    android:paddingLeft="20dp"
+                    android:textColor="#fff"
+                    android:textSize="15dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="230dp"
+                    style="@style/AudioFileInfoOverlayText"
+                 />
+    
+</RelativeLayout>
+
+    <GridView 
+    android:id="@+id/grid_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_below="@+id/rl1"
+    android:numColumns="auto_fit"
+    android:background="#0E8A96"
+    android:columnWidth="200dp"
+    android:horizontalSpacing="3dp"
+    android:verticalSpacing="5dp"
+    android:gravity="center"
+    android:stretchMode="columnWidth" />  
+ 
+
+</LinearLayout>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/profile_bg">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView"
+        android:text="Nom "
+        android:textColor="#000000"
+        android:textSize="15dp" />
+
+    <EditText
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:id="@+id/fname"
+            android:hint="Nom"
+            android:textColor="#000000"
+            android:layout_alignTop="@+id/textView2"
+            android:layout_alignParentRight="true"
+            android:textSize="15dp"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/textView2"
+        android:layout_toLeftOf="@+id/lname"
+        android:text="Prénom"
+        android:textColor="#000000"
+        android:textSize="15dp" />
+
+    <EditText
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:textColor="#000000"
+            android:id="@+id/lname"
+            android:hint="Prénom"
+            android:layout_alignTop="@+id/textView3"
+            android:layout_alignParentRight="true"
+            android:textSize="15dp"/>
+
+    <TextView
+            android:layout_width="125dp"
+            android:layout_height="40dp"
+            android:textColor="#000000"
+            android:text="Email"
+            android:id="@+id/textView4"
+            android:layout_below="@+id/textView3"
+            android:layout_alignRight="@+id/textView3"
+            android:textSize="15dp"/>
+
+    <EditText
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:textColor="#000000"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/emailedit"
+            android:hint="E-mail"
+            android:layout_below="@+id/lname"
+            android:layout_alignParentRight="true"
+            android:textSize="15dp"/>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_alignRight="@+id/textView6"
+        android:layout_below="@+id/textView4"
+        android:text="Nom d&apos;utilisateur"
+        android:textColor="#000000"
+        android:textSize="15dp" />
+
+    <EditText
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:textColor="#000000"
+            android:id="@+id/uname"
+            android:hint="Nom d&apos;utilisateur"
+            android:layout_alignTop="@+id/textView5"
+            android:layout_alignParentRight="true"
+            android:textSize="15dp"/>
+
+    <EditText
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:textColor="#000000"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/pword"
+            android:hint="Password"
+            android:layout_alignLeft="@+id/uname"
+            android:layout_below="@+id/textView5"
+            android:textSize="15dp"/>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/pword"
+        android:layout_toLeftOf="@+id/pword"
+        android:text="Mot de passe"
+        android:textColor="#000000"
+        android:textSize="15dp" />
+
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="56dp"
+            android:textColor="#000000"
+            android:id="@+id/register_error"
+            android:layout_below="@+id/register"
+            android:layout_alignParentRight="true"/>
+
+    <Button
+        android:id="@+id/bktologin"
+        android:layout_width="175dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/pword"
+        android:layout_marginTop="94dp"
+        android:layout_toRightOf="@+id/register"
+        android:background="@drawable/button_fb_bg"
+        android:text="Retour"
+        android:textColor="#000000"
+        android:textSize="13dp" />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/bktologin"
+        android:layout_alignBottom="@+id/bktologin"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/textView2"
+        android:background="@drawable/button_fb_bg"
+        android:text="Registrer"
+        android:textColor="#000000"
+        android:textSize="13dp" />
+
+    <TextView
+        android:id="@+id/txthistorique"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView6"
+        android:layout_toLeftOf="@+id/cCard"
+        android:text="Carte Credit "
+        android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/cCard"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/txthistorique"
+        android:ems="10"
+        android:hint="Carte Crédit"
+        android:textColor="#000000"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/cCard"
+        android:text="Carte Fidélité "
+        android:textColor="#000000"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/fCard"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/TextView01"
+        android:ems="10"
+        android:hint="Carte Fidélité"
+        android:textColor="#000000"
+        android:textSize="15dp" />
+
+    <View
+        android:id="@+id/menu_item_divscan"
+        android:layout_width="135dp"
+        android:layout_height="3dp"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="19dp"
+        android:layout_toLeftOf="@+id/textView"
+        android:background="@color/White" />
+
+    <View
+        android:id="@+id/View01"
+        android:layout_width="140dp"
+        android:layout_height="3dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/menu_item_divscan"
+        android:layout_toRightOf="@+id/textView"
+        android:background="@color/White" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="EASY-STORE"
+        android:textColor="@color/White"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:fontFamily="algerian"
+         />
+
+</RelativeLayout>
+

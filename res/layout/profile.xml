@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/android">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:text="EASY STORE"
+        android:gravity="center"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView2"
+        android:text="Nom"
+        android:textColor="#000000"
+        android:textSize="15dp" />
+
+    <TextView
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:id="@+id/fpname"
+            android:textColor="#000000"
+            android:layout_alignTop="@+id/textView3"
+            android:layout_alignParentRight="true"
+            android:textSize="15dp"/>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/textView3"
+        android:layout_toLeftOf="@+id/fname"
+        android:text="Prénom"
+        android:textColor="#000000"
+        android:textSize="15dp" />
+
+    <TextView
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:id="@+id/lpname"
+            android:textColor="#000000"
+            android:layout_below="@+id/textView3"
+            android:layout_toRightOf="@+id/textView5"
+            android:textSize="15dp"/>
+
+    <TextView
+            android:layout_width="125dp"
+            android:layout_height="40dp"
+            android:text="E-mail"
+            android:textColor="#000000"
+            android:id="@+id/textView7"
+            android:layout_below="@+id/textView5"
+            android:layout_toLeftOf="@+id/textView2"
+            android:textSize="15dp"/>
+
+    <TextView
+        android:id="@+id/pemail"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/fname"
+        android:layout_below="@+id/textView5"
+        android:layout_toLeftOf="@+id/lpname"
+        android:textColor="#000000"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/textView7"
+        android:text="Nom d&apos;utilisateur"
+        android:textColor="#000000"
+        android:textIsSelectable="false"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/textView9"
+        android:layout_toLeftOf="@+id/uname"
+        android:textColor="#000000"
+        android:textSize="15dp" 
+        android:text="Mot de passe"
+        />
+
+    <TextView
+        android:id="@+id/emailp"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/textView9"
+        android:layout_alignParentRight="true"
+        android:textColor="#000000"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/usernamep"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/pemail"
+        android:textColor="#000000"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/passwordfp"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/textView11"
+        android:layout_alignBottom="@+id/textView11"
+        android:layout_alignParentRight="true"
+        android:textColor="#000000"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/creditcardfp"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/textView11"
+        android:layout_toLeftOf="@+id/lpname"
+        android:text="Carte Credit"
+        android:textColor="#000000"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/fidcard"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/creditcardfp"
+        android:text="Carte Fidélité"
+        android:textColor="#000000"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/cartecreditfp"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/fidcard"
+        android:layout_alignParentRight="true"
+        android:textColor="#000000"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/cartefidfp"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/fidcard"
+        android:layout_alignBottom="@+id/fidcard"
+        android:layout_alignParentRight="true"
+        android:textColor="#000000"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/btnUpdateuser"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/fidcard"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/button_fb_bg"
+        android:text="Update "
+        android:textColor="#000000"
+        android:textSize="13dp" />
+
+    <Button
+        android:id="@+id/logoutbtn"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/btnUpdateuser"
+        android:background="@drawable/button_fb_bg"
+        android:text=" Logout"
+        android:textColor="#000000"
+        android:textSize="13dp" />
+
+</RelativeLayout>
